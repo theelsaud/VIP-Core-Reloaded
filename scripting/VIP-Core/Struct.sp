@@ -20,6 +20,7 @@ enum DatabaseUsage
 	DB_Postgre // TODO
 }
 
+
 enum struct Times
 {
 	char Phrase[64];
