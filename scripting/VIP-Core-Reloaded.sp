@@ -52,12 +52,12 @@ public void OnPluginStart()
 
 	API_SetupForwards();
 
+	LoadDatabase();
+
 	HookEvents();
 	LoadAdminMenu();
 	LoadMainMenu();
 	RegCmds();
 
 	LoadTest();
-
-	CallForward_OnVIPLoaded();
 }

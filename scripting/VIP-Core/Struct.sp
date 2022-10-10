@@ -12,7 +12,6 @@ enum ChatHookType
 	ChatHook_SearchPlayer
 }
 
-<<<<<<< HEAD
 enum DatabaseUsage
 {
 	DB_None = 0,
@@ -22,8 +21,6 @@ enum DatabaseUsage
 }
 
 
-=======
->>>>>>> parent of ac0aa38 (checkout)
 enum struct Times
 {
 	char Phrase[64];
@@ -37,6 +34,7 @@ enum struct ServerData
 
 	EngineVersion Engine;
 
+	DatabaseUsage DB_Type;
 	Database DB;
 
 	char GroupsConfigPath[PLATFORM_MAX_PATH];
@@ -47,8 +45,8 @@ enum struct ServerData
 
 	void Init()
 	{
-		BuildPath(Path_SM, this.GroupsConfigPath, sizeof(this.GroupsConfigPath), "%s/%s", CONFIG_MAIN_PATH, CONFIG_GROUPS_FILENAME);
-		BuildPath(Path_SM, this.LogsPath, sizeof(this.LogsPath), "logs/%s", LOGS_FILENAME);
+		//BuildPath(Path_SM, this.GroupsConfigPath, sizeof(this.GroupsConfigPath), "%s/%s", CONFIG_MAIN_PATH, CONFIG_GROUPS_FILENAME);
+		//BuildPath(Path_SM, this.LogsPath, sizeof(this.LogsPath), "logs/%s", LOGS_FILENAME);
 	}
 }
 ServerData g_eServerData;
